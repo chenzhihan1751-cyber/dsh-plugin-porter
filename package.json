@@ -15,15 +15,19 @@
     "export",
     "import",
     "portable",
-    "cordis"
+    "cordis",
+    "dsh-plugin-migrator",
+    "dsh-plugin-porter",
+    "deepseek",
+    "harness"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenzhihan1751-cyber/plugin-porter.git"
+    "url": "git+https://github.com/chenzhihan1751-cyber/dsh-plugin-porter.git"
   },
-  "homepage": "https://github.com/chenzhihan1751-cyber/plugin-porter#readme",
+  "homepage": "https://github.com/chenzhihan1751-cyber/dsh-plugin-porter#readme",
   "bugs": {
-    "url": "https://github.com/chenzhihan1751-cyber/plugin-porter/issues"
+    "url": "https://github.com/chenzhihan1751-cyber/dsh-plugin-porter/issues"
   },
   "private": true,
   "type": "module",
