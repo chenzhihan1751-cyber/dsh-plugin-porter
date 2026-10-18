@@ -35,7 +35,7 @@ in one checksummed, multi-volume archive. Cross-machine, cross-profile, one comm
 2. 填这一行：
 
    ```
-   github:chenzhihan1751-cyber/plugin-porter
+   github:chenzhihan1751-cyber/dsh-plugin-porter
    ```
 
 3. 装完**重启 DSH**（关窗口，再双击图标）
@@ -265,7 +265,7 @@ Node 版本太低。要求 **Node ≥ 22**：`node -v` 看一下。
 - Agent 工具：`plugin_migrator_list` / `_export` / `_import` / `_copy`
 
 ```bash
-git clone https://github.com/chenzhihan1751-cyber/plugin-porter.git
+git clone https://github.com/chenzhihan1751-cyber/dsh-plugin-porter.git
 cd plugin-porter
 node install.mjs        # 装进本机 DSH
 ```
