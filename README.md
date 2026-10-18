@@ -3,6 +3,11 @@
 > 把 DSH 的插件、配置、记忆、会话，打包带走。
 > 换电脑、换 profile、给别人分享工作环境——一个包搞定。
 
+**Plugin Porter** is a plugin migrator / backup tool for [DeepSeek Harness (DSH)](https://github.com/deepseek-ai):
+export a migration bundle, import it on another machine, copy plugins to a different profile,
+or move the whole environment — config, memory, sessions, attachments, plugin sources —
+in one checksummed, multi-volume archive. Cross-machine, cross-profile, one command.
+
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-green)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A522-brightgreen)](https://nodejs.org)
 [![DSH](https://img.shields.io/badge/DSH-0.1.2%2B-blue)](#三分钟装好)
