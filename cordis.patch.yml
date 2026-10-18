@@ -1,0 +1,8 @@
+# dsh-plugin-migrator bundle patch：向 profile 装配层插入本插件行。
+# DSH ≥ 0.1.2-rc.1 启动时强制要求每个 bundle 的 package.json 声明 dsh.bundle.patch，
+# 并由该 patch 的 insert 行把插件挂载起来（缺了会启动即报
+# "profile bundle ... declares no dsh.bundle in its package.json"）。
+# 无 config：本插件不导出 Config（默认值写在 apply 里），走 patch 层传参会与 schema 校验冲突。
+- insert:
+    - id: dsh-plugin-migrator
+      name: '@dsh-external/dsh-plugin-migrator'

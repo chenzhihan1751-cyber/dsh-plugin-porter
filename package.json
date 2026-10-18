@@ -1,0 +1,66 @@
+{
+  "name": "@dsh-external/dsh-plugin-migrator",
+  "version": "0.3.0",
+  "description": "DSH 迁移 0.3：① 插件迁移包 ② 导入 ③ 搬到别的 profile ④ 全量整合包（插件知识+提示词）⑤ 整机迁移（配置/记忆/会话/附件/技能/插件源码/API 密钥 → 换电脑一个包搬完，分卷+sha256 校验+自带恢复脚本）",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "plugin-migrator",
+    "plugin-manager",
+    "migration",
+    "migrate",
+    "backup",
+    "restore",
+    "export",
+    "import",
+    "portable",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzhihan1751-cyber/plugin-porter.git"
+  },
+  "homepage": "https://github.com/chenzhihan1751-cyber/plugin-porter#readme",
+  "bugs": {
+    "url": "https://github.com/chenzhihan1751-cyber/plugin-porter/issues"
+  },
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "assets",
+    "tools",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "cordis": ">=4.0.0-rc <5"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  }
+}
